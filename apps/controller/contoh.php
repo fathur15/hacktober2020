@@ -15,7 +15,7 @@ class contoh extends controller
                 ['file' => '', 'position' => 'head']
             )
         );
-        $this->view('user/header/login', $data);
-        $this->view('user/main/login', $data);
+        $this->addViews(array('user/heder/login', 'user/main/login'), $data);
+        $this->render();
     }
 }
